@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/common.css">
     <title>List</title>
   </head>
   <body>
-    <div class="wrapper">
-      
+    
+      <section>
+        <div class="header">
       <a href="index.html">
         <img
         src="assests/images/logo.png"
@@ -19,12 +22,15 @@
        </a>
       <a href="login.html" target="_blank">Login</a>
       </div>
-      <div class="content"> 
+    </section>
+    <section class="content">
+      <div class="list"> 
         <ul>
-          <li><a href="list.html"><p>List View</p></a></li>
-          <li><a href="list.html"><p>Map View</p></a></li>
+          <li><a href="#start"><p>List View</p></a></li>
+          <li><a href="#mapview" ><p>Map View</p></a></li>
           
         </ul>
+        <div id="start">
         <a href="detail.html"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
           " alt="Radisson blue"></a>
         <h3>Radisson Blue Hotel</h3>
@@ -38,10 +44,17 @@
         <h3>Taj Palace</h3>
         <h5>4 stars</h5>
         <h6>New Delhi</h6>
-        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map view">
-        <p>Map View</p>
+        </div>
+        <div id="mapview">
+          <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map view">
+          <p>Map View</p>
+        </div>
       </div>
+        
+      </div>
+    </section>
       <div class="footer">
+       
         <a href="contact.html" target="_blank"><p>Contact us</p></a>
         <a href="https://www.facebook.com/" target="_blank"
           ><img
