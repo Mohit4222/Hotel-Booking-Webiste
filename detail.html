@@ -8,13 +8,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <img
+      <div class="header">
+        <img
         src="assests/images/logo.png"
         alt="logo image"
         height="150px"
         width="150px"
       />
-      <div class="header">
         <a href="login.html" target="_blank">Login</a>
         <br />
       </div>
@@ -25,7 +25,19 @@
           alt="Radisson Blue"
         />
         <br />
-        <a href="payment.html">Book Now</a>
+      <form action="payment.html">
+         <label for="fadult">Adults:</label>
+        <input type="number" name="fadult" id="fadult" required><br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+        <label for="fdate">From Date:</label>
+        <input type="date" name="fdate" id="fdate" required><br>
+        <label for="tdate">To Date:</label>
+        <input type="date" name="tdtae" id="tdate" required><br>
+        <label for="total">Total:</label>
+        <input type="number" name="total" id="total" disabled ><br>
+        <input type="submit" value="Book Now">
+      </form>
         <h2>Raddisson Blue Hotel</h2>
         <h5>RATING</h5>
         <h5>5 STAR</h5>
@@ -70,8 +82,6 @@
         /></a>
         <p>&#169 2020 ROOOMSEARCH PVT. LTD.</p>
       </div>
-    </div>
-  </body>
     </div>
   </body>
 </html>
