@@ -1,70 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/index.css">
     <title>Index</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/common.css" />
   </head>
   <body>
-   
-   
-      <section class="header">
-     <img
-          src="assests/images/logo.png"
-          alt="logo image"
-        />
-        <a href="login.html" target="_self">Login</a><br>
-        <input type="search" name="search" id="search" placeholder="City">
-     
-    </section>
-    <section class="content">
-     
-       
-        <a href="list.html"><img
-          src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
-         
+    <!-- Wrapper div it contain entire content of the html body -->
+    <div id="wrapper">
+      <!-- Header begin -->
+      <header>
+        <img src="assests/images/logo.png" alt="logo" />
+
+        <a href="login.html" target="_self">Login</a>
+      </header>
+      <!-- Header ends -->
+
+      <!-- Content body begin -->
+      <div id="content">
+        <!-- Search bar begin -->
+        <div id="searchBar"><input type="text" placeholder="City" /><br /></div>
+        <!-- Search bar ends -->
+        <div id="cityCards">
+          <a href="list.html" target="_self"
+            ><img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+              alt="city1"
+          /></a>
+
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
+            alt="city2"
+          />
+
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
+            alt="city3"
+          />
+
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+            alt="city4"
+          />
+          <br />
+        </div>
+        <a href="#">View more >></a>
+      </div>
+      <!-- Content body ends -->
+
+      <!-- Footer begin -->
+      <footer>
+        <a href="contact.html" target="_self">Contact Us</a><br />
+        <a href="https://www.facebook.com" target="_blank"
+          ><img src="assests/images/facebook.png" alt="facebookLogo"
         /></a>
-        <img
-          src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
-         
-        />
-        <img
-          src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
-         
-        />
-        <img
-          src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
-         
-        />
-        <a href="index.html" target="_blank"><p>View more>></p></a>
-     
-    </section>
-    <section class="footer">
-      
-        <a href="contact.html" target="_blank"><p>Contact us</p></a>
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img
-            src="assests/images/facebook.png"
-            alt="facebook"
-           
+        <a href="https://www.instagram.com" target="_blank"
+          ><img src="assests/images/instagram.png" alt="instagramLogo"
         /></a>
-        <a href="https://www.instagram.com/?hl=en" target="_blank"
-          ><img
-            src="assests/images/instagram.png"
-            alt="instagram"
-           
+        <a href="https://twitter.com" target="_blank"
+          ><img src="assests/images/twitter.png" alt="twitterLogo" /><br
         /></a>
-        <a href="https://twitter.com/home?lang=en" target="_blank"
-          ><img
-            src="assests/images/twitter.png"
-            alt="twitter"
-           
-        /></a>
-        <p>&#169 2020 ROOOMSEARCH PVT. LTD.</p>
-     
-    </section>
+        <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+      </footer>
+      <!-- Footer ends -->
+    </div>
   </body>
 </html>

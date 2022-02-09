@@ -1,95 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/detail.css">
-    <title>Index</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <section class="header">
-      <div class="logo">
-        <a href="index.html">
-        <img
-        src="assests/images/logo.png"
-        alt="logo image"
-       
-      />
-    </a>
-      </div>
-        <a href="login.html" target="_blank">Login</a>
-        <br />
-      </div>
-    </section>
-      <div class="content">
-        <img
-          src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
-      "
-          alt="Radisson Blue"
-        />
-        <br />
-      <form action="payment.html">
-         <label for="fadult">Adults:</label>
-        <input type="number" name="fadult" id="fadult" required><br>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required><br>
-        <label for="fdate">From Date:</label>
-        <input type="date" name="fdate" id="fdate" required><br>
-        <label for="tdate">To Date:</label>
-        <input type="date" name="tdtae" id="tdate" required><br>
-        <label for="total">Total:</label>
-        <input type="number" name="total" id="total" disabled ><br>
-        <input type="submit" value="Book Now">
-      </form>
-        <h2>Raddisson Blue Hotel</h2>
-        <h5>RATING</h5>
-        <h5>5 STAR</h5>
-        <h5>AMENTITIES</h5>
-        <ul>
-          <li>Room Service</li>
-          <li>Restaurent</li>
-          <li>Business Centre</li>
-          <li>Fitness Centre</li>
-          <li>Pool</li>
-        </ul>
-        <h3>DESCRIPTION</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          tempore eos explicabo, impedit voluptatum commodi odit quibusdam, est
-          minus aliquam illum enim accusamus molestias id sit distinctio animi,
-          molestiae exercitationem.
-        </p>
-      </div>
-      <section class="footer">
-      <div>
-        <a href="contact.html" target="_blank"><p>Contact us</p></a>
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img
-            src="assests/images/facebook.png"
-            alt="facebook"
-            height="20px"
-            width="22px"
-        /></a>
-        <a href="https://www.instagram.com/?hl=en" target="_blank"
-          ><img
-            src="assests/images/instagram.png"
-            alt="instagram"
-            height="20px"
-            width="22px"
-        /></a>
-        <a href="https://twitter.com/home?lang=en" target="_blank"
-          ><img
-            src="assests/images/twitter.png"
-            alt="twitter"
-            height="20px"
-            width="22px"
-        /></a>
-        <p>&#169 2020 ROOOMSEARCH PVT. LTD.</p>
-      </div>
-    </section>
-    </div>
-  </body>
+<html>
+	<head>
+		<title>Detail</title>
+        <link rel="stylesheet" href="styles/detail.css">
+		<link rel="stylesheet" href="styles/common.css">
+	</head>
+	<body>
+        <!-- Wrapper div it contain entire content of the html body -->
+		<div id="wrapper">
+
+            <!-- Header begin -->
+			<header>
+				<a href="index.html"><img src="assests/images/logo.png" alt="logo"></a>
+                <a href="login.html" target="_self">Login</a>
+            </header>
+            <!-- Header ends -->
+            
+            <!-- Content body begin -->
+			<div id="content">
+				<div id="hotel1" class="hotelDetail">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/><br>
+                   
+                    <form>
+                        <label for="adults">Adults:</label>
+                        <input type="number" min="1" value="1" name="adult">
+                        <br>
+                        <label for="name">Name:</label>
+                        <input type="text " name="name" required>
+                        <br>
+                        <label for="from_date">From Date:</label>
+                        <input type="date" name="fromDate" required>
+                        <br>
+                        <label for="to_date">To Date:</label>
+                        <input type="date" name="toDate" required>
+                        <br>
+                        <label for="total">Total:</label>
+                        <input type="text" name="price" readonly>
+                        <br>
+                        <button type="submit" formaction="payment.html">Submit</button>
+                    </form>
+
+                    <h1>Radisson  Blu Hotel</h1>
+                    <p>RATING</p>
+                    <p>5 Star</p>
+                    <p>AMENITIES</p>
+                    <ul>
+                        <li>Room Service</li>
+                        <li>Restaurant</li>
+                        <li>Business center</li>
+                        <li>Fitness center</li>
+                        <li>Pool</li>
+                    </ul>
+                    <h5>DESCRIPTION</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, velit repellendus, autem magnam rerum 
+                        ipsum quaerat dolor error accusantium, doloremque hic. Hic ad ut perferendis cum veritatis in 
+                        aliquid itaque.</p>
+                </div>
+			</div>
+            <!-- Content body ends -->
+
+            <!-- Footer begin -->
+			<footer>
+				<a href="contact.html" target="_self">Contact Us</a><br>
+                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebookLogo" ></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagramLogo" ></a>
+                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitterLogo" /></a><br>
+                <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+			</footer>
+            <!-- Footer ends -->
+            
+		</div>
+	</body>
 </html>

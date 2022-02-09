@@ -1,4 +1,7 @@
-.content img{
+#content img{
     height: 500px;
     width: 500px;
+}
+.hotelDetail{
+    margin: 2% 4%;
 }

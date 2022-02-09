@@ -1,4 +1,33 @@
+.hotelList img{
+    height: 200px;
+    width: 250px;
+}
+
 #start img{
     height: 150px;
     width: 150px;
+}
+#hotel1 {
+    background-color: rgb(132, 132, 139);
+    width: 40%;
+  }
+  #hotel2 {
+    background-color: rgb(132, 132, 139);
+    width: 40%;
+  }
+  #hotel3 {
+    background-color: rgb(132, 132, 139);
+    width: 40%;
+  }
+  #start {
+    margin: 2%;
+  }
+  .footer {
+    background-color: rosybrown;
+    height: auto;
+  }
+.hotelList{
+    margin: 2%;
+    background-color: rgb(132, 136, 139);
+    width: 40%;
 }
