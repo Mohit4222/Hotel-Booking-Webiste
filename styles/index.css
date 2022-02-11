@@ -3,6 +3,7 @@
     margin-bottom: 20%;
 } */
 
+
 #content img {
   height: 150px;
   width: 150px;
@@ -10,7 +11,7 @@
 
 #searchBar {
   background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
-  height: 380px;
+  height: 495px;
   background-position: center;
   background-size: cover;
 }
@@ -27,14 +28,15 @@
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 25.8em;
+  position: fixed;
+  top: 32.9em;
   height: 150px;
   width: 150px;
   border-radius: 25%;
   color: #f1f1f1;
   display: none;
 }
+
 .cards:hover .overlay {
   display: block;
 }

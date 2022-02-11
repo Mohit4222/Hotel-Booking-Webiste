@@ -9,7 +9,9 @@ body {
 /* #wrapper{
   
 } */
-
+.Modal1 > button {
+  margin-right: 3em;
+}
 header img {
   height: 60px;
   width: 60px;
