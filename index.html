@@ -1,219 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Index</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/common.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-    />
-  </head>
-  <body>
-    <!-- Wrapper div it contain entire content of the html body -->
-    <div id="wrapper">
-      <!-- Header begin -->
-     
-    <!-- login Modal begin -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="index.html" style="text-align: center;">
-              <label for="usename" style="margin-right: 11%;">Username:</label>
-              <input
-              
-                type="text"
-                name="usename"
-                id="usename"
-                placeholder="Enter Username"
-                required
-              />
-              <br />
-              <br>
-              <label for="paswword" style="margin-right: 11%;" >Password:</label>
-              <input
-             
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Enter Password"
-                required
-              />
-              <br />
-            </form>
-          </div>
-          <div class="modal-footer" style="padding-right: 14em;">
-            <a href="index.html"
-              ><button type="button" class="btn btn-primary">Login</button></a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-         <!-- login modal ends -->
-      <header>
-        <img src="assests/images/logo.png" alt="logo" class="logo" />
-        <div class="Modal1">
-          <button
-          type="button"
-          class="btn btn-light"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Login
-        </button>
-    
-        <!-- Button trigger modal -->
-       
-       
-      </header>
-      <!-- Header ends -->
 
-      <!-- Content body begin -->
-      <div id="content">
-        <!-- Search bar begin -->
-        <div id="searchBar"><input type="text" placeholder="City" /><br /></div>
-        <!-- Search bar ends -->
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/be61e954f2.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<title>Index</title>
 
-        <div id="cityCards">
-          <div class="cards">
-            <a href="list.html" target="_self"
-              ><img
-                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
-                alt="city1"
-            /></a>
-            <a href="list.html" target="_self"
-              ><div class="overlay"><span class="cityName">Delhi</span></div>
-            </a>
-          </div>
-          <div class="cards">
-            <img
-              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
-              alt="city2"
-            />
-            <div class="overlay"><span class="cityName">Goa</span></div>
-          </div>
-          <div class="cards">
-            <img
-              src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
-              alt="city3"
-            />
-            <div class="overlay"><span class="cityName">Hyderabad</span></div>
-          </div>
-          <div class="cards">
-            <img
-              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
-              alt="city4"
-            />
-            <div class="overlay"><span class="cityName">Kolkata</span></div>
-          </div>
-        </div>
+		<link rel="stylesheet" href="styles/index.css">
+		<link rel="stylesheet" href="styles/common.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+		
+	</head>
+	<body>
+		<!-- Wrapper div it contain entire content of the html body -->
+		<div id="wrapper">
+			<!-- Loader div begin -->
+			<div id="loader">
+				
+			</div>
+			<!-- Loader div ends -->
+			<!-- Header begin -->
+			<header>
+				<img src="assests/images/logo.png" alt="logo" class="logo">
+				<a href="login.html" target="_self" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#login" style="margin-right: 2em;"><span>LOGIN</span></a>
+			</header>
+			<!-- Header ends -->
 
-       <a href="#" class="view-more"> <button type="button" class="btn btn-secondary">View more>></button></a>
-      </div>
-      <!-- Content body ends -->
-      <!-- Contact us modal starts -->
-      <div
-      class="modal fade"
-      id="contact-us"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="index.html">
-              <p>Thank you for reaching out</p>
-              <p>Please enter your email and we will get back to you</p>
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email" required placeholder="Enter your email id"/><br />
-            </form>
-          </div>
-          <div class="modal-footer">
-            <a href="index.html"
-              ><button type="button" class="btn btn-primary">Submit</button></a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- contact-us modal ends here -->
+			
+			<!-- Content body begin -->
+			<div id="content">
+				
+				<!-- Search bar begin -->
+				<div id="searchBar">
+					<div class="search">
+						<input type="text" placeholder="City" ><br>
+					</div>
+				</div>
+				<!-- Search bar ends -->
+				
+				<div id="cityCards">
+					<a href="list.html" target="_self">
+					<div class="cards" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg) ">
+						<div class="overlay">
+						<p style="text-decoration: none; color:  #f1f1f1;">Delhi</p>
+						</div>
+					</div></a>
 
-      <!-- Footer begin -->
-      <footer>
-        <div id="contact">
-            <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#contact-us"
-          >
-            Contact us
-          </button>
-        </div>
+					<div class="cards" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg) ;">
+						<div class="overlay">
+						<p style="color:  #f1f1f1;">Goa</p>
+						</div>
+					</div>
+
+					<div class="cards" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg) ;">
+						<div class="overlay">
+						<p style="color:  #f1f1f1;">Hyderabad</p>
+						</div>
+					</div>
+
+					<div class="cards" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg) ;">
+						<div class="overlay">
+						<p style="color:  #f1f1f1;">Kolkata</p>
+						</div>
+					</div>
+
+				</div>
+				<div id="view">
+                	<a href="#" class="btn btn-secondary"">View More</a>
+				</div>
+			</div>
+			
+			<!-- Content body ends -->
+
+			<!-- Login modal begin -->
+			<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel" >Please Login</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body" style="text-align: center; ">
+						<label for="UserName" style="margin: 1em 0em 1em 2em;; ">Username:</label>
+						<input type="text" placeholder="Enter Username" name="username" required style="margin-left: 3em;">
+						<br>
+						<label for="Password" style="margin: 1em 0em 1em 2em;">Password:</label>
+						<input type="password" placeholder="Enter Password" name="password" required style="margin-left: 3em;">
+						<br>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+				
+					  <button type="button" class="btn btn-primary">Login</button>
+					</div>
+				  </div>
+				</div>
+			  </div>	
+			
+			<!-- Login modal modal id end -->
+			
+			<!-- Contact-us modal begin -->
+			<div class="modal fade" id="contact-us" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel" >Get in touch</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<span>Thank you for reaching out!!!</span><br> 
+						<span>Please enter you email and we get back to you.</span><br>
+						form
+						<label for="email">Email:</label>
+						<input type="email" placeholder="Enter your email id" name="email" required>
+						<br>
+					</div>
+					<div class="modal-footer">
+				
+					  <button type="submit" formaction="index.html" class="btn btn-primary">Submit</button>
+					</div>
+				  </div>
+				</div>
+			  </div>	
+			<!-- Contact-us modal ends -->
 
 
-        <div class="copyright-info">
-          <span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-        </div>
+			<!-- Footer begin -->
+			<footer>
+				<div id="contact">
+					<a href="contact.html" target="_self" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#contact-us"><span>Contact Us</span></a>
+				</div>
 
-        <div id="social-media">
-          <a href="https://www.facebook.com" target="_blank"
-            ><img src="assests/images/facebook.png" alt="facebookLogo"
-          /></a>
-          <a href="https://www.instagram.com" target="_blank"
-            ><img src="assests/images/instagram.png" alt="instagramLogo"
-          /></a>
-          <a href="https://twitter.com" target="_blank"
-            ><img src="assests/images/twitter.png" alt="twitterLogo" /><br
-          /></a>
-        </div>
-      </footer>
-      <!-- Footer ends -->
-    </div>
-    <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"
-  ></script>
-  </body>
+				<div class="copyright-info">
+					<span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+				</div>
+
+				<div id="social-media">     
+					<a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebookLogo" ></a>
+                	<a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagramLogo" ></a>
+                	<a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitterLogo" ><br></a>
+				</div>
+			</footer>
+			<!-- Footer ends -->
+		
+		</div>
+		
+	</body>
 </html>

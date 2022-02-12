@@ -1,9 +1,9 @@
-.aboutHotel img {
+#aboutHotel img{
   max-height: 300px;
   max-width: 270px;
 }
 
-.aboutHotel {
+#aboutHotel{
   background-color: rgb(132, 136, 139);
   width: 45em;
   margin: 0 auto;
@@ -13,10 +13,10 @@
   align-items: center;
   flex-direction: row;
 }
-.about {
+.about{
   padding-left: 1em;
 }
-#detail {
+#detail{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -25,10 +25,58 @@
   margin-bottom: 8em;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: rosybrown;
+  background-color:  rosybrown;
 }
 
-.payButton {
-  text-decoration: none;
-  color: black;
+@media only screen and (min-width:576px) and ( max-width:768px) {
+  #aboutHotel{
+    width: 90%;
+    margin: 5%;
+  }
+  #aboutHotel{
+      margin-top: 20%;
+  }
+  
+}
+@media only screen and (max-width:576px){
+  
+  #aboutHotel{
+    width: 100%;
+    margin: 5% 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #aboutHotel img{
+    min-width: 100%;
+  }
+  #aboutHotel div{
+    margin: 6% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #detail{
+    margin: 2% 2%;
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .PayButton{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #aboutHotel{
+      
+      margin: 20% 20% 5% 1%;
+  }
+
 }

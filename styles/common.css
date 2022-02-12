@@ -1,30 +1,21 @@
-body {
+body{
   height: 100%;
   width: 100%;
   margin: 0;
   background-color: #e0e0e0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+#wrapper{
+  width: 100%;
+  height: 100%;
 }
 
-/* #wrapper{
-  
-} */
-.Modal1 > button {
-  margin-right: 3em;
-}
-header img {
+header img{
   height: 60px;
   width: 60px;
 }
 
-.login {
-  text-decoration: none;
-  margin-right: 2%;
-  color: black;
-  vertical-align: middle;
-}
-
-header {
+header{
   background-color: rosybrown;
   position: fixed;
   width: 100%;
@@ -33,19 +24,19 @@ header {
   align-items: center;
 }
 
-#content {
+#content{
   overflow: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 6%;
+  margin-bottom: 5em;
 }
 
-footer img {
+footer img{
   height: 20px;
   width: 22px;
 }
 
-footer {
+footer{
   background-color: rosybrown;
   width: 100%;
   position: fixed;
@@ -63,13 +54,39 @@ footer {
 }
 
 #contact {
-  margin-left: 2%;
+  margin-left: 2em;
 }
 
-#social-media {
-  margin-right: 1%;
+#social-media{
+  margin-right: 2em;
 }
 
-.copyright {
+.copyright{
   font-size: 10px;
+}
+@media only screen and (min-width:576px) and ( max-width:768px) {
+
+  header{
+      height: 4em;
+  }
+
+  footer{
+      height: 4em;
+  }
+  .copyright{
+      font-size: 15px;
+  }
+
+}
+@media only screen and (max-width:576px){
+      header{
+          height: 4em;
+      }
+
+      footer{
+          height: 4em;
+      }
+      .copyright{
+          font-size: 15px;
+      }
 }
