@@ -31,6 +31,7 @@ body a{
 #cityCards img {
   border-radius: 25%;
   box-shadow: 10px 10px 10px grey;
+ 
 }
 
 #cityCards {
@@ -39,6 +40,18 @@ body a{
   justify-content: space-evenly;
   align-content: center;
   padding: 2em 0;
+ flex-wrap: wrap;
+  
+}
+#newCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 2em 0;
+ flex-wrap: wrap;
+  
+
 }
 
 #view {
@@ -47,6 +60,7 @@ body a{
   text-align: center;
 }
 .cards{
+  
   height: 150px;
   width: 150px;
   border-radius: 25%;
