@@ -24,12 +24,7 @@
 			</div>
 			<!-- Loader div ends -->
             <!-- Header begin -->
-			<header>
-
-				<a href="index.html"><img src="assests/images/logo.png" alt="logo" ></a>
-				<a href="login.html" target="_self" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#login" style="margin-right: 2em;"><span>LOGIN</span></a>
- 
-            </header>
+			<header class="header-footer" id="header"></header>
             <!-- Header ends -->
 
             <!-- Content body begin -->
@@ -56,79 +51,29 @@
                         <p><b>Total Amount: </b>Rs 10000</p>
                     </div>
                     <div class="PayButton">
-                        <button class="btn btn-danger" disabled style="color: black;"><span>Pay Now</span></button>
+                        <button class="btn btn-danger" disabled style="color: black;" onclick="DoPay()"><span>Pay Now</span></button>
                     </div>
                 </div>
 			</div>
             <!-- Content body ends -->
 
             <!-- Login modal begin -->
-			<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel" >Please Login</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body" style="text-align: center; ">
-						<label for="UserName" style="margin-left: 3em; ">Username:</label>
-						<input type="text" placeholder="Enter Username" name="username" required style="margin-left: 4em;">
-						<br>
-						<label for="Password" style="margin: 1.5em 0em 1em 3em;">Password :</label>
-						<input type="password" placeholder="Enter Password" name="password" required style="margin-left: 4em;">
-						<br>
-					</div>
-					<div class="modal-footer" style="padding-right: 13em;">
-				
-					  <button type="button" class="btn btn-primary">Login</button>
-					</div>
-				  </div>
-				</div>
-			  </div>	
+
+			<div id="headerModal"></div>
 			
 			<!-- Login modal modal id end -->
-			
+			  
 			<!-- Contact-us modal begin -->
-			<div class="modal fade" id="contact-us" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="exampleModalLabel" >Get in touch</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<span>Thank you for reaching out!!!</span><br> 
-						<span>Please enter you email and we get back to you.</span><br>
-						<label for="email">Email:</label>
-						<input type="email" placeholder="Enter your email id" name="email" required>
-						<br>
-					</div>
-					<div class="modal-footer">
-				
-					  <button type="submit" formaction="index.html" class="btn btn-primary">Submit</button>
-					</div>
-				  </div>
-				</div>
-			</div>	
+			<div id="footerModal"></div>
 			<!-- Contact-us modal ends -->
 
             <!-- Footer begin -->
-			<footer>
-				<div id="contact">
-					<a href="contact.html" target="_self" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#contact-us"><span>Contact Us</span></a>
-				</div>
-
-				<div class="copyright-info">
-					<span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-				</div>
-
-				<div id="social-media">     
-					<a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebookLogo" ></a>
-                	<a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagramLogo" ></a>
-                	<a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitterLogo" ><br></a>
-				</div>
-			</footer>
+			<footer id="footer" class="header-footer"></footer>
             
 		</div>
+
+		<!-- Links for JavaScript access -->
+		<script src="scripts/payment.js"></script>
+		<script src="scripts/common.js"></script>
 	</body>
 </html>

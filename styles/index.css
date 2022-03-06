@@ -6,6 +6,7 @@ body a{
   width: 150px;
 }
 
+
 #searchBar {
   background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
   min-height: 380px;
@@ -19,8 +20,7 @@ body a{
 }
 
 #searchBar input {
-  
-  width: 24em;
+  width: 21em;
   padding: 10px;
   border: 1px transparent;
   border-radius: 12px;
@@ -28,30 +28,17 @@ body a{
   outline: none;
 }
 
-#cityCards img {
-  border-radius: 25%;
-  box-shadow: 10px 10px 10px grey;
- 
-}
 
 #cityCards {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  place-items: center;
+  grid-row-gap: 100px;
   justify-content: space-evenly;
-  align-content: center;
-  padding: 2em 0;
- flex-wrap: wrap;
-  
+  padding: 4% 0%;
 }
-#newCards{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-  padding: 2em 0;
- flex-wrap: wrap;
-  
-
+#addedCityCards {
+  display: none;
 }
 
 #view {
@@ -59,23 +46,21 @@ body a{
   width: 100%;
   text-align: center;
 }
+
 .cards{
-  
   height: 150px;
   width: 150px;
   border-radius: 25%;
   box-shadow: 10px 10px 10px grey;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: space-evenly;
   place-items:  center;
 
 }
 
 .overlay{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -98,9 +83,14 @@ body a{
     #cityCards{
       display: grid;
       grid-template-columns: 40% 40%;
-      
+      place-items: center;
       grid-row-gap: 50px;
-      margin-left: 50px;
+     
+    }
+    
+    #view {
+      place-items: center;
+      text-align: center;
     }
   }
   @media only screen and (max-width:576px){
@@ -117,7 +107,7 @@ body a{
     #cityCards{
       margin: 10% 0;
       display: grid;
-      grid-row-gap: 20px;
-      
+      grid-template-columns: 40%;
+      grid-row-gap: 30px;
       }
   }
