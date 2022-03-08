@@ -1,3 +1,5 @@
+
+//Function for coverting the header and footer into javascript template   
 let displayHeader = () => {
     let headerTemplate = `<a href="index.html"><img src="assests/images/logo.png" alt="logo" class="logo"></a>
     <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#login" data-backdrop="false"  onclick="mainLogin(event)" style="margin-right: 2%;">LOGIN</button>`;
@@ -76,6 +78,7 @@ let displayFooter = () => {
 
 displayHeader();
 displayFooter();
+
 //Tenplate Function has ended
 
 //Function's for Login credentials implemtation
