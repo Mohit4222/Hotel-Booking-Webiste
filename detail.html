@@ -32,34 +32,17 @@
 
 
 				<div id="hotelDetail">
-          <div id="imageSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="d-block w-100" alt="Slider1">
-                </div>
-                
-                <div class="carousel-item">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" class="d-block w-100" alt="Slider2">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" class="d-block w-100" alt="Slider3">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+           <div id="imageSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+             
+
             </div>
                       
                       
-            <form id="form" action="payment.html">
+            <form id="form" action="payment.html" method="get" autocomplete="off">
               <div class="inputs" >
                 <label for="adults" >Adults:</label>
-                <input type="number" min="1" value="1" name="adult" id="adult" oninput="dispalyTotalPrice()" required>
+                <input type="number" min="1" value="1" name="adults" id="adult" oninput="dispalyTotalPrice()" required>
               </div>
               <div class="inputs" >
                 <label for="name">Name:</label>
@@ -77,6 +60,7 @@
                 <label for="total">Total:</label>
                 <input type="text" name="" id="total" readonly>
               </div>
+              <input type="number" id="id" name="id" style="display: none;">  
               <div id="submitButton">
                 <button type="submit" class="btn btn-outline-success">Book Now</button>
               </div>
@@ -84,27 +68,17 @@
           </div>
         </div>
         <div class="info">
-            <h1>Radisson  Blu Hotel</h1>
+            <h1 id="hotel-name"></h1>
             <h5>RATING</h5>
-            <P>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
+            <P id="rating">
+                
             </P>
             <h5>AMENITIES</h5>
-            <ul>
-                <li>Room Service</li>
-                <li>Restaurant</li>
-                <li>Business center</li>
-                <li>Fitness center</li>
-                <li>Pool</li>
+            <ul id="amenities">
+               
             </ul>
             <h5>DESCRIPTION</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, velit repellendus, autem magnam rerum 
-                ipsum quaerat dolor error accusantium, doloremque hic. Hic ad ut perferendis cum veritatis in 
-                aliquid itaque.</p>
+            <p id="description"></p>
         </div>
 			</div>
         <!-- Content body ends -->

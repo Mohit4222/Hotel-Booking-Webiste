@@ -1,5 +1,5 @@
-#aboutHotel img{
-  max-height: 300px;
+#aboutHotel  img{
+  max-height: 400px;
   max-width: 270px;
 }
 
@@ -7,14 +7,17 @@
   background-color: rgb(132, 136, 139);
   width: 45em;
   margin: 0 auto;
-  margin-top: 10em;
+  margin-top: 7em;
   margin-bottom: 2%;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 .about{
-  padding-left: 1em;
+margin-left: 2em;
+}
+.customerDetail {
+padding: 2% 0%;
 }
 #detail{
   display: flex;
@@ -22,7 +25,7 @@
   justify-content: space-around;
   align-items: center;
   margin: 2%;
-  margin-bottom: 8em;
+  margin-bottom: em;
   border: 1px solid black;
   border-radius: 5px;
   background-color:  rosybrown;
@@ -32,11 +35,11 @@
   #aboutHotel{
     width: 90%;
     margin: 5%;
+    margin-top: 20%;
   }
-  #aboutHotel{
-      margin-top: 20%;
+  #detail {
+    padding: 0em 1em;
   }
-  
 }
 @media only screen and (max-width:576px){
   
